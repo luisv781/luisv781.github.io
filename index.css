@@ -1,33 +1,36 @@
 body {
     background-color: black;
-    background-image: url(https://i.pinimg.com/originals/f9/6d/fb/f96dfb9f9d4e0b42af3888de8b9473a7.gif);
+    /*
+    background-image: url("firebackground.gif");
     margin: 0;
-    background-size: 102vw, 102vh;
-    background-position-x: -1vw;
-    background-position-y: -1vh;
-    background-repeat: no-repeat;
+    height: max-content;
+    background-size: 100vw, 100vh;
+    background-position-y: bottom;
+    background-repeat: no-repeat;*/
+}
+
+.background {
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    bottom: -420px;
+    margin: 0;
+    z-index: -1;
 }
 
 p {
     color: #fff;
     font-size: 2.5em;
-    font-family: 'Papyrus', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Papyrus', 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     margin: 10px 50px;
 }
 
-.title {
-    color: crimson;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4em;
-    text-shadow: 6px 6px black;
-    text-align: center;
-    margin: 1em 0;
-}
+
 
 .copyright {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: right;
     margin: 10px;
     position: fixed;
@@ -40,4 +43,26 @@ p {
     bottom: -10px;
     left: 60px;
     opacity: 0.4;
+}
+
+@keyframes titlemovements {
+    0%  {transform: translate(0px, 0px) rotate(0deg);}
+    33%  {transform: translate(12px, 6px) rotate(1deg);}
+    67%  {transform: translate(-6px, -7px) rotate(-1deg);}
+    100%  {transform: translate(0px, 0px) rotate(0deg);}
+}
+
+.title {
+    color: crimson;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
+    text-shadow: 12px 12px black;
+    text-align: center;
+    width: fit-content;
+    margin: 1em auto;
+
+    animation-name: titlemovements;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
