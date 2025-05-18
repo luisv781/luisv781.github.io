@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: black;
     /*
@@ -18,7 +23,7 @@ body {
     z-index: -1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px), screen and (orientation: portrait) {
     .background {
         bottom: 0;
     }
@@ -52,10 +57,10 @@ p {
 }
 
 @keyframes titlemovements {
-    0%  {transform: translate(0px, 0px) rotate(0deg);}
-    33%  {transform: translate(12px, 6px) rotate(1deg);}
-    67%  {transform: translate(-6px, -7px) rotate(-1deg);}
-    100%  {transform: translate(0px, 0px) rotate(0deg);}
+    0%  {transform: translate(3px, -2px) rotate(1deg);}
+    33%  {transform: translate(12px, 6px) rotate(0deg);}
+    67%  {transform: translate(-6px, -9px) rotate(-2deg);}
+    100%  {transform: translate(3px, -2px) rotate(1deg);}
 }
 
 .title {
@@ -64,6 +69,7 @@ p {
     font-size: 4em;
     text-shadow: 12px 12px black;
     text-align: center;
+    white-space: nowrap;
     width: fit-content;
     margin: 1em auto;
 
