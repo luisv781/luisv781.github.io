@@ -7,15 +7,15 @@ fetch('https://api.mcsrvstat.us/bedrock/3/mc.thesaper.com').then(
     }
 ).then(
     serverStatus => {
-        //window.alert("Server Online: "+ serverStatus.online);
         const srvStatusP = document.getElementById("srvStatus");
         const srvPlayers = document.getElementById("srvPlayers");
         if (serverStatus.online) {
             srvStatusP.innerHTML = "Minecraft Server Status: Online";
+            srvPlayers.innerHTML = "Players: " + serverStatus.players.online;
         } else {
             srvStatusP.innerHTML = "Minecraft Server Status: Offline";
+            srvPlayers.innerHTML = "Players: 0";
         }
-        srvPlayers.innerHTML = "Players: " + serverStatus.players.online;
     }
 ).catch(
     error => {

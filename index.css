@@ -27,6 +27,13 @@ body {
     .background {
         bottom: 0;
     }
+    .title {
+        font-size: 3em;
+        white-space: wrap;
+    }
+    p {
+        font-size: 2.25em;
+    }
 }
 
 p {
@@ -34,7 +41,8 @@ p {
     font-size: 2.5em;
     font-family: 'Papyrus', 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    margin: 10px 50px;
+    margin: 10px auto;
+    width: fit-content;
 }
 
 
@@ -49,7 +57,7 @@ p {
     right: 0px;
 }
 
-.bunny {
+.image {
     position: fixed;
     bottom: -10px;
     left: 60px;
@@ -58,8 +66,8 @@ p {
 
 @keyframes titlemovements {
     0%  {transform: translate(3px, -2px) rotate(1deg);}
-    33%  {transform: translate(12px, 6px) rotate(0deg);}
-    67%  {transform: translate(-6px, -9px) rotate(-2deg);}
+    33%  {transform: translate(18px, 6px) rotate(0deg);}
+    67%  {transform: translate(-12px, -9px) rotate(-2deg);}
     100%  {transform: translate(3px, -2px) rotate(1deg);}
 }
 
