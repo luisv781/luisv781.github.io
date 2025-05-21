@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Papyrus';
+    src: url(/font/PAPYRUS.ttf) format('truetype'),
+    url(/font/PAPYRUS.woff) format('woff');
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -85,4 +91,19 @@ p {
     animation-timing-function: ease-in-out;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+}
+
+.navBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    list-style: none;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
 }

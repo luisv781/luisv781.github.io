@@ -1,0 +1,25 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #000;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 6em;
+    position: fixed;
+    left: 15px;
+    bottom: 20px;
+}
+h2 {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4.5em;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
