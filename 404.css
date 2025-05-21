@@ -4,22 +4,33 @@ html, body {
 }
 
 body {
-    background-color: #000;
+    background-color: #202020;
 }
 
 h1 {
     color: #fff;
     font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 6em;
+    font-size: 12em;
     position: fixed;
-    left: 15px;
+    margin: 0;
+    left: 20px;
     bottom: 20px;
 }
 h2 {
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 4.5em;
+    margin: 0;
     position: fixed;
     right: 20px;
-    top: 20px;
+    top: 10px;
+}
+
+img#head {
+    max-height: 180px;
+    width: auto;
+    height: auto;
+    margin: 0;
+    position: fixed;
+    /*transform: translate(-50%, -50%) translate(50vw, 50vh);*/
 }
