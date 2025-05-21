@@ -14,6 +14,8 @@ let velX = 1;
 const offset = 5;
 let count = 0;
 
+let cooldown = 50;
+
 dvd.style.translate = posX + 'px ' + posY + 'px';
 function step() {
     if (posX + dvdWidth >= width && velX != -1) {
@@ -36,6 +38,9 @@ function step() {
     posY += velY * offset;
     dvd.style.translate = posX + 'px ' + posY + 'px';
     counter.innerText = count;
-    setTimeout(step, 50);
+    if (cooldown > 10) {
+        cooldown = 50 - count / 3;
+    }
+    setTimeout(step, cooldown);
 }
 step();
