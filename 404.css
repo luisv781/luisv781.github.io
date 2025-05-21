@@ -23,7 +23,11 @@ h2 {
     margin: 0;
     position: fixed;
     right: 20px;
-    top: 10px;
+}
+h2#counter {
+    font-size: 3.5em;
+    position: fixed;
+    bottom: 20px;
 }
 
 img#head {
