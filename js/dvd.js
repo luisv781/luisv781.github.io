@@ -5,13 +5,13 @@ const height = window.innerHeight;
 const dvdWidth = dvd.offsetWidth;
 const dvdHeight = dvd.offsetHeight;
 
-let posX = width / 2;
-let posY = height / 2;
+let posX = ((width / 2) + width * Math.random()) / 2;
+let posY = ((height / 2) + height * Math.random()) / 2;
 
 let velY = 1;
 let velX = 1;
 
-const offset = 5;
+let offset = 5;
 let count = 0;
 
 let cooldown = 50;
@@ -39,7 +39,9 @@ function step() {
     dvd.style.translate = posX + 'px ' + posY + 'px';
     counter.innerText = count;
     if (cooldown > 10) {
-        cooldown = 50 - count / 3;
+        cooldown = 50 - (count / 3);
+    } else {
+        offset = 5 + ((count - 120) / 5);
     }
     setTimeout(step, cooldown);
 }
