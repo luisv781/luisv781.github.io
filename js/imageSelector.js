@@ -1,4 +1,4 @@
-const images = ["marco.png", "sebsmirk.png", "tuffchris.png", "bunny.png", "carloo.png"]
+const images = ["marco.png", "sebsmirk.png", "tuffchris.png", "bunny.png", "carloo.png", "german.png"]
 
 const randomNum = Math.floor(Math.random() * images.length)
 const chosenImage = images[randomNum]
