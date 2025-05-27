@@ -1,6 +1,8 @@
-const images = ["marco.png", "sebsmirk.png", "tuffchris.png", "bunny.png", "carloo.png", "german.png"]
+const images = ["bunny.png", "sebsmirk.png", "tuffchris.png", "marco.png", "carloo.png", "german.png"];
 
-const randomNum = Math.floor(Math.random() * images.length)
-const chosenImage = images[randomNum]
+let randomNum = Math.floor(Math.random() * images.length);
+const chosenImage = images[randomNum];
 
-document.getElementById("cornerImg").setAttribute("src", "images/" + chosenImage)
+if (randomNum == 0) Math.floor(Math.random() * images.length);
+
+document.getElementById("cornerImg").setAttribute("src", "images/" + chosenImage);
